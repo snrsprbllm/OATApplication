@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <TextView
+        android:id="@+id/gm"
+        android:layout_width="106dp"
+        android:layout_height="28dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Good Morning"
+        android:textColor="#60000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <TextView
+        android:id="@+id/welcome_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:fontFamily="sans-serif"
+        android:text="UserName"
+        android:textColor="#292727"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/gm"
+        app:layout_constraintTop_toBottomOf="@id/gm" />
+
+    <ImageButton
+        android:id="@+id/userbutton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="150dp"
+        android:backgroundTint="#00000000"
+        android:src="@drawable/fuck1"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gm"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#000000" />
+
+    <ImageButton
+        android:id="@+id/cardbutton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="70dp"
+        android:backgroundTint="#00000000"
+        android:src="@drawable/corz"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gm"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#000000" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="350dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="460dp"
+        android:backgroundTint="@color/bluegray"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Loyalty card"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+        />
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

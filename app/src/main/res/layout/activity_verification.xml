@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <ImageButton
+        android:id="@+id/back_arrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:tint="@color/black"
+        android:src="@android:drawable/ic_menu_revert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onClick3"/>
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Verification"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/back_arrow"
+        app:layout_constraintTop_toBottomOf="@id/back_arrow" />
+
+    <TextView
+        android:id="@+id/welcome_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Enter the OTP code we sent you"
+        android:textColor="#97292727"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/sign_in"
+        app:layout_constraintTop_toBottomOf="@id/sign_in" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="250dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="MissingConstraints"
+        android:background="#7EE3E6E8">
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/countdownDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="370dp"
+        android:textColor="#9A9A9797" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/home_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="159dp"
+        android:layout_marginBottom="60dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/iconly_light_outline_arrow___right"
+        app:backgroundTint="@color/bluegray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/white"
+        android:layout_marginRight="35dp"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:onClick="onClick5"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
