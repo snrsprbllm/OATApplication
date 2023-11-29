@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    android:orientation="vertical">
 
     <ImageButton
         android:id="@+id/back_arrow"
@@ -14,11 +13,12 @@
         android:layout_height="24dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        app:tint="@color/black"
+        android:onClick="onClick3"
         android:src="@android:drawable/ic_menu_revert"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="onClick3"/>
+        app:tint="@color/black" />
+
     <TextView
         android:id="@+id/sign_in"
         android:layout_width="wrap_content"
@@ -49,6 +49,7 @@
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginBottom="250dp"
+        android:background="#7EE3E6E8"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,8 +58,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5"
-        tools:ignore="MissingConstraints"
-        android:background="#7EE3E6E8">
+        tools:ignore="MissingConstraints">
 
         <EditText
             android:id="@+id/editText1"
@@ -108,25 +108,27 @@
         android:id="@+id/countdownDisplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
+        android:layout_marginBottom="370dp"
         android:gravity="center_horizontal"
+        android:text=""
         android:textAlignment="center"
+        android:textColor="#9A9A9797"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        tools:ignore="MissingConstraints"
-        android:layout_marginBottom="370dp"
-        android:textColor="#9A9A9797" />
+        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/home_arrow"
         android:layout_width="wrap_content"
         android:layout_height="159dp"
+        android:layout_marginRight="35dp"
         android:layout_marginBottom="60dp"
         android:foregroundGravity="center"
+        android:onClick="onClick5"
         android:src="@drawable/iconly_light_outline_arrow___right"
         app:backgroundTint="@color/bluegray"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -134,9 +136,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:tint="@color/white"
-        android:layout_marginRight="35dp"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:onClick="onClick5"/>
+        tools:ignore="SpeakableTextPresentCheck" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

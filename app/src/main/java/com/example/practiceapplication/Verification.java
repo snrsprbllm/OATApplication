@@ -14,6 +14,7 @@ public class Verification extends AppCompatActivity {
     private static final int SECONDS_TO_COUNTDOWN = 30;
     private TextView countdownDisplay;
     private CountDownTimer timer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

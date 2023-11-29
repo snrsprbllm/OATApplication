@@ -27,9 +27,7 @@ public class SplashSkibidi extends AppCompatActivity {
             startActivity(intent);
 
 
-
-        }
-        else {
+        } else {
             handler = new Handler();
             handler.postDelayed(new Runnable() {
                 @Override
@@ -41,8 +39,6 @@ public class SplashSkibidi extends AppCompatActivity {
                 }
             }, 3000);
         }
-
-
 
 
     }

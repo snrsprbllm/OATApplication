@@ -25,8 +25,8 @@ public class SignIn extends AppCompatActivity {
     }
 
     public void onClick(View v) {
-            Intent intent = new Intent(this, SignUp.class);
-            startActivity(intent);
+        Intent intent = new Intent(this, SignUp.class);
+        startActivity(intent);
     }
 
     public void onClick1(View v) {
@@ -38,6 +38,7 @@ public class SignIn extends AppCompatActivity {
         Intent intent = new Intent(this, ForgotPassword.class);
         startActivity(intent);
     }
+
     public void toHome(View v) {
         SharedPreferences preferences = getSharedPreferences("settings", MODE_PRIVATE);
         preferences.edit().putBoolean("isFirstRun", true).apply();

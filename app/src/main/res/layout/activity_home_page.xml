@@ -367,9 +367,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Americano"
-        android:textSize="20dp"
-
         android:textColorHint="@color/black"
+
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/bottomSheetDragHandleView5"
         app:layout_constraintEnd_toEndOf="@+id/bottomSheetDragHandleView5"
         app:layout_constraintStart_toStartOf="@+id/bottomSheetDragHandleView5"
@@ -380,8 +380,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Flat white"
-        android:textSize="20dp"
         android:textColorHint="@color/black"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/bottomSheetDragHandleView4"
         app:layout_constraintEnd_toEndOf="@+id/bottomSheetDragHandleView4"
         app:layout_constraintStart_toStartOf="@+id/bottomSheetDragHandleView4"
@@ -392,9 +392,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Mocha"
-        android:textSize="20dp"
-
         android:textColorHint="@color/black"
+
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/bottomSheetDragHandleView3"
         app:layout_constraintEnd_toEndOf="@+id/bottomSheetDragHandleView3"
         app:layout_constraintHorizontal_bias="0.516"
@@ -407,8 +407,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Cappucchino"
-        android:textSize="20dp"
         android:textColorHint="@color/black"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/bottomSheetDragHandleView2"
         app:layout_constraintEnd_toEndOf="@+id/bottomSheetDragHandleView2"
         app:layout_constraintHorizontal_bias="0.467"

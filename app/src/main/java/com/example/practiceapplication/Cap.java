@@ -12,13 +12,10 @@ import android.widget.ImageView;
 public class Cap extends AppCompatActivity {
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cap);
-
 
 
     }
@@ -71,7 +68,7 @@ public class Cap extends AppCompatActivity {
 
     public void changeoneicealphaclick(View view) {
         ImageButton oneice = (ImageButton) findViewById(R.id.oneice);
-        ImageButton twoice =(ImageButton) findViewById(R.id.twoice);
+        ImageButton twoice = (ImageButton) findViewById(R.id.twoice);
         ImageButton threeice = (ImageButton) findViewById(R.id.threeice);
         oneice.setAlpha(1f);
         twoice.setAlpha(0.2f);
@@ -80,7 +77,7 @@ public class Cap extends AppCompatActivity {
 
     public void changetwoicealphaclick(View view) {
         ImageButton oneice = (ImageButton) findViewById(R.id.oneice);
-        ImageButton twoice =(ImageButton) findViewById(R.id.twoice);
+        ImageButton twoice = (ImageButton) findViewById(R.id.twoice);
         ImageButton threeice = (ImageButton) findViewById(R.id.threeice);
         oneice.setAlpha(0.2f);
         twoice.setAlpha(1f);
@@ -89,7 +86,7 @@ public class Cap extends AppCompatActivity {
 
     public void changethreeicealphaclick(View view) {
         ImageButton oneice = (ImageButton) findViewById(R.id.oneice);
-        ImageButton twoice =(ImageButton) findViewById(R.id.twoice);
+        ImageButton twoice = (ImageButton) findViewById(R.id.twoice);
         ImageButton threeice = (ImageButton) findViewById(R.id.threeice);
         oneice.setAlpha(0.2f);
         twoice.setAlpha(0.2f);

@@ -14,8 +14,6 @@ public class HomePage extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
 
 
-
-
     }
 
     public void AmericanoClick(View v) {
