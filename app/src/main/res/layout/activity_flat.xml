@@ -48,7 +48,7 @@
         android:layout_height="150dp"
         android:background="@drawable/radius"
         android:backgroundTint="#48979797"
-        android:src="@drawable/americano"
+        android:src="@drawable/flatwhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"

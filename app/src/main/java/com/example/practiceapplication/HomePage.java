@@ -23,6 +23,21 @@ public class HomePage extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void CapClick(View v) {
+        Intent intent = new Intent(this, Cap.class);
+        startActivity(intent);
+    }
+
+    public void MochaClick(View v) {
+        Intent intent = new Intent(this, Mocha.class);
+        startActivity(intent);
+    }
+
+    public void FlatWhiteClick(View v) {
+        Intent intent = new Intent(this, Flat.class);
+        startActivity(intent);
+    }
+
     public void onClick3(View v) {
         Intent intent = new Intent(this, HomePage.class);
         startActivity(intent);
