@@ -121,7 +121,8 @@
         app:layout_constraintTop_toBottomOf="@+id/forgot_password"
         app:layout_constraintVertical_bias="1.0"
         app:tint="@color/white"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:onClick="toHome"/>
 
     <TextView
         android:id="@+id/sign_up"
