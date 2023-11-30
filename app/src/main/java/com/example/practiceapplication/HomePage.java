@@ -3,6 +3,7 @@ package com.example.practiceapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 
@@ -12,6 +13,8 @@ public class HomePage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
+        SharedPreferences preferences = getSharedPreferences("settings", MODE_PRIVATE);
+        preferences.edit().putBoolean("isFirstRun", true).apply();
 
 
     }
