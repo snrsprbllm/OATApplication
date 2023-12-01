@@ -16,6 +16,8 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.util.regex.Pattern;
+
 public class SignIn extends AppCompatActivity {
 
 
@@ -36,13 +38,24 @@ public class SignIn extends AppCompatActivity {
                 String Mail, Password;
                 Mail = String.valueOf(mail.getText());
                 Password = String.valueOf(password.getText());
+                String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+                Pattern pattern = Pattern.compile(emailPattern);
+                boolean isValid = pattern.matches(emailPattern, Mail);
 
-                if(TextUtils.isEmpty(Password)|| TextUtils.isEmpty(Mail)){
-                    Toast.makeText(SignIn.this, "Проверьте заполненность полей!", Toast.LENGTH_SHORT).show();
+
+
+                if(TextUtils.isEmpty(Password)|| TextUtils.isEmpty(Mail)) {
+                    Toast.makeText(SignIn.this, "Проверьте заполненность полей", Toast.LENGTH_SHORT).show();
+                }
+
+                else if (!isValid) {
+                    Toast.makeText(SignIn.this, "Проверьте валидность ввода", Toast.LENGTH_SHORT).show();
                 }
 
 
-                else {
+
+
+                else if (Password.equals(password)){
                     mAuth.signInWithEmailAndPassword(Mail, Password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                         @Override
                         public void onSuccess(AuthResult authResult) {
@@ -51,6 +64,8 @@ public class SignIn extends AppCompatActivity {
                             startActivity(intent);
                         }
                     });
+                } else {
+                    Toast.makeText(SignIn.this, "Не совпадают пароли", Toast.LENGTH_SHORT).show();
                 }
 
             }
